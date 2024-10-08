@@ -7,6 +7,7 @@ export const darkMode = 'selector'
 export const theme = {
   fontFamily: {
     satoshi: ['Satoshi', 'sans-serif'],
+    parisienne: ["Parisienne", "cursive"],
   },
   screens: {
     '2xsm': '375px',

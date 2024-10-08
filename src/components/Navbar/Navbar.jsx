@@ -33,7 +33,7 @@ const Navbar = () => {
         setShowMenu(!showMenu);
     }
   return (
-    <div className='text-black  '>
+    <div className='text-white  relative z-[9999] duration-300 px-20'>
       <div className='container py-2 md:py-0'>
 
         <div className='flex justify-between items-center'>
@@ -66,12 +66,16 @@ const Navbar = () => {
                     </ul>
                 </nav> 
 
-                <div>
+                <div className='md:hidden block'>
+                    <div className='flex items-center gap-4'>
                     {
-                        showMenu ? <HiMenu onClick={toggleMenu}
-                        className='cursor-pointer' size={30}/> : 
-                        <HiMenuAlt3 onClick={toggleMenu} className='cursor-pointer' size={30}/>
-                    }
+                        showMenu ?(<HiMenu onClick={toggleMenu}
+                            className='cursor-pointer'
+                            size={30}/> ) : (
+                                <HiMenuAlt3 onClick={toggleMenu} 
+                                className='cursor-pointer' size={30}/>
+                            )}
+                    </div>
                 </div>
             
             
